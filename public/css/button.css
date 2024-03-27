@@ -1,0 +1,271 @@
+
+
+button.beige,input[type=submit]{
+    margin: 5%;
+    font-family: 'kollektif';
+    background: #fff7e1;
+    border-radius: 12em;
+    border: 5px solid #D0B5DB;
+    width: 10em;
+    height: 4em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: block;
+  }
+
+  header button.purple{
+    width: 9em;
+    height: 4em;
+  }
+
+  button.purple{
+    margin: 5%;
+    font-family: 'kollektif';
+    background: #e9cef4;
+    border-radius: 12em;
+    border: 5px solid #EFFFAE;
+    width: 10em;
+    height: 4em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: block;
+  }
+
+ button.yellow {
+    font-family: 'kollektif';
+    background: #EFFFAE;
+    border-radius: 12em;
+    border: 5px solid #e9cef4;
+    width: 9em;
+    height: 4em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 10%;
+  }
+
+form input[type=submit]{
+    align-self: center;
+    width: 11em;
+    height: 5em;
+    font-size: 24px;
+}
+
+#submit{
+    font-size: 20px;
+}
+    
+.form-frame-2 input[type=submit]{
+    border: 5px solid #EFFFAE;
+    background: #e9cef4;
+  }
+
+.card-btn.mobile-btn{
+    display: none;
+    width: 8em;
+}
+
+header button{
+    margin: 0;
+}
+
+
+
+/*
+.button-container{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+}*/
+
+
+/* Inputs */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+  border: 2px solid #D0B5DB;
+  padding: 14px 15px;
+  height: 46px;
+  margin-bottom: 20px;
+  color: #909090;
+  font-size: 12px;
+  font-weight: 400;
+  background: #fff;
+  max-width: 100%;
+  outline: 0;
+  font-family: inherit;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.form-frame-2  input[type="text"],
+.form-frame-2  input[type="password"],
+.form-frame-2  input[type="date"],
+.form-frame-2  input[type="datetime"],
+.form-frame-2  input[type="email"],
+input[type="number"],
+input[type="search"],
+.form-frame-2  input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+  border: 2px solid #FFFBA6;
+  padding: 14px 15px;
+  height: 46px;
+  margin-bottom: 20px;
+  color: #909090;
+  font-size: 12px;
+  font-weight: 400;
+  background: #fff;
+  max-width: 100%;
+  outline: 0;
+  font-family: inherit;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="date"]:focus,
+  input[type="datetime"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  input[type="time"]:focus,
+  input[type="url"]:focus,
+  textarea:focus {
+    border-color: #292929;
+    color: #292929;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+
+@media (min-width:1200px){
+  button{display: block;}
+
+
+}
+
+  @media (max-width:1050px){
+
+
+    .card-btn{
+        display: block;
+      }
+    
+      .card-btn.mobile-btn{
+        display: block;
+        position: absolute;
+        bottom:0;
+        opacity: 0.9;
+      }
+
+      .card-btn.mobile-btn p{
+        font-weight: 600;
+        font-size: 26px;
+        margin: 0;
+      }
+
+      .cards button{
+        width: 200px;
+        height: 100px;
+        background: #FFFBA6;
+    }
+
+    .cards button{
+        font-size: 24px;
+      }
+
+      .cards{
+        height: 100vh;
+      }
+
+      .cards img{
+        object-fit: cover;
+      }
+      
+
+  }
+
+  @media (max-width:768px){
+
+        button{
+            width: 10em;
+            height: 4em;
+        }
+
+        aside button{
+            font-size: 18px;
+        }
+
+        .actu-pres button{
+            margin-top: 2vh;
+        }
+  }
+
+  @media (max-width: 576px) {
+
+
+    .card-btn.mobile-btn p{
+        font-weight: 600;
+        font-size: 16px;
+        margin: 0;
+      }
+
+      .cards button{
+        width: 200px;
+        height: 80px;
+        font-size: 20px;
+      }
+
+
+      
+      button{
+        width: 170px;
+        height: 80px;
+      }
+  }
+
+  @media (max-width: 450px) {
+
+
+    .card-btn.mobile-btn p{
+        font-weight: 600;
+        font-size: 16px;
+        margin: 0;
+      }
+
+      .cards button{
+        width: 200px;
+        height: 80px;
+        font-size: 20px;
+      }
+      
+      button{
+        width: 150px;
+        height: 70px;
+      }
+
+      .actu-pres button{
+        width: 130px;
+        height: 50px;
+        border: 3px solid #EFFFAE;
+        font-size: 14px;
+    
+      }
+
+  }

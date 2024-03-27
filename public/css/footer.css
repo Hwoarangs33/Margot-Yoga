@@ -1,0 +1,189 @@
+
+/* footer  */
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.left-footer {
+  display: flex;
+  flex-direction: column;
+    gap: 2em;
+  }
+  
+  footer a {
+    font-size: 2em;
+  }
+  
+  .right-footer {
+    display: flex;
+    flex-direction: column;
+    padding-right: 3%;
+    padding-top: 8%;
+    gap: 1em;
+    font-size: 1.3em;
+  }
+  
+  
+  .icons {
+    gap: 1em;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .footer-mobile{
+    display: none;
+  }
+
+  @media (max-width:1300px){
+
+    
+    footer a, footer p{
+      font-size: 20px;
+    }
+
+    .left-footer{
+      gap: 1em;
+    }
+  }
+
+
+  @media(max-width:1050px){
+
+    .right-footer{
+      padding: 0;
+    }
+    footer {
+      background-color: #FFFBA6;
+      align-items: center;
+      padding: 1vh;
+      position: relative;
+      z-index: -2;
+      display: block;
+      height: 100%;
+    }
+
+    .logo-wrapper{
+      position: relative;
+    }
+
+    footer .purple-bg-2{
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+    }
+
+    .footer-mobile{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50%;
+    }
+
+
+
+   .icons{
+    transform: translate(-50%, -50%);
+    bottom: 80%;
+    left: 50%;
+    position: absolute;
+    gap: 5vw;
+    }
+
+    .icons img{
+      height: 70px;
+      width: 70px;
+    }
+
+    .footer-mobile p{
+      margin-bottom: 0;
+      font-size: 30px;
+    }
+
+    footer .logo{
+      transform: translate(-50%, -50%);
+      bottom: 40%;
+      left: 50%;
+      position: absolute;
+    }
+
+
+    .left-footer{
+      display: none;
+    }
+
+    .right-footer p, footer #burger-btn{
+      font-size: 15px;
+    }
+
+
+
+
+
+  }
+
+  @media (max-width:768px){
+    .footer-mobile{
+  
+      margin-top: 80%;
+    }
+
+ 
+    .icons img{
+      height: 50px;
+      width: 50px;
+    }
+
+      .footer-mobile p{
+            font-size: 24px;
+          }
+      
+  }
+
+  @media (max-width:550px){
+    .icons img{
+      height: 40px;
+      width: 40px;
+    }
+
+    .footer-mobile p {
+      font-size: 18px;
+    }
+
+    footer .logo{
+      margin-top: 5vh;
+      bottom: 35%;
+    }
+
+    
+
+
+  }
+
+
+  @media (max-width:378px){
+    .icons{
+      top: 10%;
+      left: 50%;
+  
+    }
+
+    
+
+    .footer-mobile{
+      margin-top: 80%;
+    }
+
+
+
+
+
+  }
+  
+  
+  
