@@ -10,14 +10,14 @@
         <p>
             <?php echo $messageAdd ?>
         </p>
+
         <form class="form first-form" action="connexion.php" method="POST">
             <input type="text" name="nom_user" placeholder="NOM">
-            <input type="text" name="prenom_user" placeholder="PRÉNOM" required>
-            <input type="email" name="mail_user" placeholder="ADRESSE E-MAIL" required>
-
+            <input type="text" name="prenom_user" placeholder="PRÉNOM *" required>
+            <input type="email" name="mail_user" placeholder="ADRESSE E-MAIL *" required>
             <input type="tel" name="tel_num" placeholder="TÉLÉPHONE">
-            <input type="password" name="mdp_user" placeholder="MOT DE PASSE" required>
-            <input type="password" name="mdp_confirm" placeholder="CONFIRMER LE MOT DE PASSE" required>
+            <input type="password" name="mdp_user" placeholder="MOT DE PASSE *" required>
+            <input type="password" name="mdp_confirm" placeholder="CONFIRMER LE MOT DE PASSE *" required>
             <div class="obligated">
                 <p><span class="asterisk">* </span>Champ obligatoire.</p>
             </div>

@@ -50,8 +50,6 @@ if(isset($_POST['submit_add'])){
                     if($messageAdd = addUser($lastName,$firstName,$email,$phone,$password,$bdd)){
                         
                     include '../app/view/modal.php';
-                       // $messageAdd =  "Bravo $firstName ! <br>
-                        // Vous avez bien été inscrit(e) !";
                     }
                    
                 }else{
@@ -109,7 +107,7 @@ if(isset($_POST['submit_login'])){
 
                         //Redirection vers l'accueil
                        header('location:./index.php');
-                
+                       include '../app/view/modal.php';
 
                     }else{
                         $messageLog ="Mot de Passe incorrect !";

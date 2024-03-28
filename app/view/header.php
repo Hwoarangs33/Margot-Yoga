@@ -55,10 +55,12 @@
       <a> Contact</a>
     </div>
     <!-- 3 -->
-
     <?php if(isset($_SESSION['firstName'])){?>
-    <a href="account.php"><img alt="LogoUser" height="45" width="45" class="icons" src="../public/images/user.png" /></a>
+     
+      <div class="account-wrapper">
+    <a href="account.php"><img alt="LogoUser" height="45" width="45" class="icons hide-mobile" src="../public/images/user.png" /></a>
    <a href="logout.php" class="hide-mobile"><button class="purple">Se déconnecter</button></a> 
+    </div>
     <?php }else{?>
    <a href="connexion.php" class="hide-mobile"><button class="purple">Connexion</button></a> 
     

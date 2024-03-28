@@ -208,6 +208,12 @@ body.burger-open {
   width: 10%;
 }
 
+.account-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 
 @media (max-width: 1500px) {
   .nav a, button, .dropdown-content p{
