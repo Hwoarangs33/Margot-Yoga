@@ -25,7 +25,7 @@
 <body>
   <!-- LE HEADER -->
   <header>
-<a class="contact" href="/contact.html">
+<a class="contact" href="/contact.php">
   <img src="../public/images/telephone.png" alt="" width="40" height="40" class="">
 </a>
 
@@ -84,7 +84,7 @@
       <div id="burger-menu-container">
         <div class="menu-menu-burger-container">
         <ul id="menu-menu-burger" class="menu">
-          <li id="menu-item" class="menu-item"><a href="index.html" aria-current="page" class="menu-link"><p class="">Accueil</p></a></li>
+          <li id="menu-item" class="menu-item"><a href="index.php" aria-current="page" class="menu-link"><p class="">Accueil</p></a></li>
           <li id="menu-item" class="menu-item menu-item-has-children">
             <a href="#" class="menu-link">
               <p class="">Cours ⤵︎</p>

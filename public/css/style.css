@@ -431,6 +431,14 @@ p {
 }
 
 }
+
+@media (min-width:1050px){
+  .hide-desktop{
+    display: none;
+  }
+}
+
+
 @media (max-width:1050px){
   #main-img-mobile{
     display: block;
@@ -565,6 +573,7 @@ position:relative;
 .arrows{
   display: none;
 }
+
 
 }
 

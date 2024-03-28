@@ -48,3 +48,39 @@ input{
     color: red;
     
 }
+
+@media (max-width:1050px) {
+.forms-wrapper{
+    background: linear-gradient(#FFFCF3,#FFF7E1);
+    margin-bottom: 50vh;
+}
+
+.form-frame-2, .form-frame-1{
+    width: 90%;
+    padding: 5vh;}
+
+    .form-frame-1{
+        position: absolute;
+    }
+
+    .form-frame-2{
+        margin-left: 0;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    .login{
+        color: #cc1b24;
+        transition: font-size .8s ease-in-out;
+    }
+
+    .login:hover{
+        font-size: 22px;
+    }
+
+    h2{
+        text-align: center;
+    }
+}

@@ -42,8 +42,8 @@ button.beige,input[type=submit]{
 
 form input[type=submit]{
     align-self: center;
-    width: 11em;
-    height: 5em;
+    width: 10em;
+    height: 4em;
     font-size: 24px;
 }
 
@@ -198,6 +198,13 @@ textarea {
         object-fit: cover;
       }
       
+      
+form input[type=submit]{
+  align-self: center;
+  width: 8em;
+  height: 4em;
+  font-size: 20px;
+}
 
   }
 
