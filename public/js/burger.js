@@ -7,17 +7,6 @@ function initBurger() {
       document.body.classList.toggle("burger-open")
     );
 
-  // burgerMenuList.forEach((list, index) => {
-  //   const hasChildren = list;
-  //   if (hasChildren) {
-  //     const el = document.createElement("div");
-  //     el.classList.add("subm-open", "anim-300");
-  //     el.innerText = "←";
-  //     hasChildren.append(el);
-  //   }
-  //   list.classList.add("subm-open-" + index);
-  // });
-
   // OPEN
   const burgerMenuItemsWithChildren = document.querySelectorAll(
     "#burger-menu .menu-item-has-children"
@@ -47,3 +36,39 @@ function initBurger() {
     });
   });
 }
+
+
+
+let subMenuParent = document.querySelectorAll('.menu-item-has-children');
+let subMenu = document.querySelectorAll('.menu-link');
+
+subMenuParent.forEach((elem) => {
+  elem.addEventListener('click', (e) => {
+    e.stopPropagation();
+    document.querySelectorAll('.sub-menu .sub-menu.toggled').forEach(t => {
+      t.classList.toggle('toggled')
+    })
+    elem.querySelector('.sub-menu').classList.toggle('toggled');
+    elem.querySelector('ul').classList.add('toggleafter');
+  })
+})
+
+let menuItemListtoggled = document.querySelectorAll('#main-nav ul.menu .sub-menu li')
+
+menuItemListtoggled.forEach((element) => {
+  element.addEventListener('click', () => {
+    console.log(document.querySelector('#menu-header .menu-item .toggled'));
+    document.querySelector('#menu-header .menu-item .toggled').classList.remove('toggleafter');
+  })
+})
+
+// remove toggle class on click outside of dropdown submenu
+document.addEventListener('click', (e) => {
+  if(e.target !== subMenuParent){
+    subMenuParent.forEach(e => {
+      e.querySelectorAll('.sub-menu').forEach(elem => {
+        elem.classList.remove('toggled');
+      })
+    })
+  }
+})

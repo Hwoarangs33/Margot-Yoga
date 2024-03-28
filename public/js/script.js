@@ -59,41 +59,6 @@ function displayImg(isActive) {
     })
 }
 
-
-let subMenuParent = document.querySelectorAll('.menu-item-has-children');
-let subMenu = document.querySelectorAll('.menu-link');
-
-subMenuParent.forEach((elem) => {
-  elem.addEventListener('click', (e) => {
-    e.stopPropagation();
-    document.querySelectorAll('.sub-menu .sub-menu.toggled').forEach(t => {
-      t.classList.toggle('toggled')
-    })
-    elem.querySelector('.sub-menu').classList.toggle('toggled');
-    elem.querySelector('ul').classList.add('toggleafter');
-  })
-})
-
-let menuItemListtoggled = document.querySelectorAll('#main-nav ul.menu .sub-menu li')
-
-menuItemListtoggled.forEach((element) => {
-  element.addEventListener('click', () => {
-    console.log(document.querySelector('#menu-header .menu-item .toggled'));
-    document.querySelector('#menu-header .menu-item .toggled').classList.remove('toggleafter');
-  })
-})
-
-// remove toggle class on click outside of dropdown submenu
-document.addEventListener('click', (e) => {
-  if(e.target !== subMenuParent){
-    subMenuParent.forEach(e => {
-      e.querySelectorAll('.sub-menu').forEach(elem => {
-        elem.classList.remove('toggled');
-      })
-    })
-  }
-})
-
 let x = document.getElementById("login");
 let y = document.getElementById("register");
 let z = document.getElementById("btn");
