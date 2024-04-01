@@ -34,14 +34,20 @@ ul#menu-menu-burger.menu{
     z-index: 2;
     pointer-events: all;}
 
-#burger-menu #burger-menu-container ul.sub-menu.toggled li{
+#burger-menu #burger-menu-container ul.sub-menu.toggled li, #burger-menu #burger-menu-container ul.sub-menu.toggleafter li {
     border: none;
     }
-    
+
+
 .sub-menu a.menu-link{
     font-size: 20px;
 }
-    
+
+#burger-menu #burger-menu-container .sub-menu  li{
+    border-bottom: none;
+}
+
+
 #burger-menu #burger-menu-container ul.sub-menu.toggled {
     opacity: 1;
     pointer-events: all;

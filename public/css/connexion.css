@@ -3,7 +3,12 @@ header{
     box-shadow: 4px 3px 4px 0px rgba(233, 206, 244, 0.69);
 }
 
-
+.forgotten-pass{
+    font-size: 14px;
+    color: rgba(224, 6, 6, 0.603);
+    text-decoration: underline;
+    text-align: center;
+}
 
 .forms-wrapper{
     display: flex;
@@ -14,6 +19,7 @@ header{
 
 .forms-wrapper h2{
     margin-bottom: 20px;
+    color: black;
 }
 
 .form-frame-1, .form-frame-2{
@@ -49,7 +55,7 @@ input{
     
 }
 
-@media (max-width:1050px) {
+@media screen and (max-width:1050px) {
 .forms-wrapper{
     background: linear-gradient(#FFFCF3,#FFF7E1);
     margin-bottom: 50vh;
@@ -57,10 +63,15 @@ input{
 
 .form-frame-2, .form-frame-1{
     width: 90%;
-    padding: 5vh;}
+    padding: 5vh;
+}
 
     .form-frame-1{
         position: absolute;
+        transition: transform 0.3s ease-out;
+        height: auto;
+        transform: scaleY(1);
+        transform-origin: top;
     }
 
     .form-frame-2{

@@ -25,7 +25,7 @@
             <input type="submit" name="submit_add" id="submit-signin" value="S'inscrire">
             <h2 class="hide-desktop">
                 <br>
-            Déjà client ? <br> Connectez vous <span class="login">ici</span>
+            Déjà client ? <br> Connectez vous <span id="login" class="login" onclick="displayForm()">ici</span>
             </h2>
         </form>
     </div>
@@ -43,10 +43,13 @@
             <input type="email" name="mail_user" placeholder="ADRESSE E-MAIL">
             <input type="password" name="mdp_user" placeholder="MOT DE PASSE">
 
-            <p class="forgotten-pass">Mot de passe oublié ?</p>
+            <p class="forgotten-pass">Mot de passe oublié</p>
 
             <input type="submit" name="submit_login" id="submit_login" value="Se connecter">
-
+            <h2 class="hide-desktop">
+                <br>
+            <br> Inscrivez vous <span id="login" class="login" onclick="displayForm()">ici</span>
+            </h2>
         </form>
         </div>
     </div>

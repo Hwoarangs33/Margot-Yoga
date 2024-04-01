@@ -239,6 +239,11 @@ header .nav,button, .links{
 }
 
 @media (max-width:1050px){
+.hide-mobile{
+  display: none;
+}
+
+
   header{
     padding: 3vh 0;
   }

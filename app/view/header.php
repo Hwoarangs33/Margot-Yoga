@@ -56,9 +56,9 @@
     </div>
     <!-- 3 -->
     <?php if(isset($_SESSION['firstName'])){?>
-     
-      <div class="account-wrapper">
+      <div class="account-wrapper hide-mobile">
     <a href="account.php"><img alt="LogoUser" height="45" width="45" class="icons hide-mobile" src="../public/images/user.png" /></a>
+    <a href="account.php"><img alt="LogoUser" height="45" width="45" class="icons hide-mobile" src="../public/images/panier.png" /></a>
    <a href="logout.php" class="hide-mobile"><button class="purple">Se déconnecter</button></a> 
     </div>
     <?php }else{?>
