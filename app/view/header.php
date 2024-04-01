@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../public/css/burger.css" />
   <link rel="stylesheet" href="../public/css/modal.css" />
   <link rel="stylesheet" href="../public/css/connexion.css" />
+  <link rel="stylesheet" href="../public/css/account.css" />
   <script defer src="../public/js/script.js"></script>
   <script defer src="../public/js/burger.js"></script>
   <script defer src="../public/js/modal.js"></script>

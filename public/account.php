@@ -11,6 +11,7 @@ $lastName = $_SESSION['lastName'];
 $firstName = $_SESSION['firstName'];
 $email = $_SESSION['email'];
 
+
 $messageAdd="";
 $actionForm="account.php";
 $titreForm="Modification";
@@ -18,6 +19,7 @@ $titreForm="Modification";
 $lastNameFill = $_SESSION['lastName'];
 $firstNameFill = $_SESSION['firstName'];
 $emailFill = $_SESSION['email'];
+
 
 //MODIFICATION
 //ETAPE 1 : vérifie que le modif a été submit
@@ -40,7 +42,7 @@ if(isset($_POST['submit_add'])){
 
                 //ETAPE 5 : vérifie correspondance des mot de passe
                 $user = getUserByMail($_SESSION['email'],$bdd);
-                if(password_verify($password,$user[0]['passwrd'])){
+                if(password_verify($password,$user[0]['mdp_user'])){
 
                     //ETAPE 6 : on vérifie que l'email est disponible
                     $user = getUserByMail($email,$bdd);

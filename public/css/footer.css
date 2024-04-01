@@ -5,6 +5,8 @@ footer{
   display: flex;
   justify-content: space-between;
   padding: 3rem;
+  border-top: 2px solid #E9CEF4;
+  box-shadow: 0px 4px 3px 5px rgba(233, 206, 244, 0.69);
 }
 
 .left-footer {

@@ -273,6 +273,8 @@ p {
   padding: 0;
   top: 80%;
   right: 20px;
+  border: none;
+  box-shadow: none;
 }
 
 /* carousel test  */
@@ -744,6 +746,7 @@ position:relative;
 
 .testimonial footer{
   top: 85%;
+
     }
 
 }

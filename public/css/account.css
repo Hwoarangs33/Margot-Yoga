@@ -1,0 +1,35 @@
+.account, .update{
+    display: flex;
+    padding: 5vh;
+    flex-direction: column;
+}
+
+.account h1, .update h1 {
+    margin-bottom: 5vh;
+}
+
+.account p{
+    align-self: baseline;
+}
+
+.account-frame{
+    background: #E9CEF4;
+    border: 5px solid #FFFBA6;
+    margin: 10vh 35vw;
+}
+      
+#update-btn{
+    width: 7em;
+    height: 3em;
+    background-color: #FFFBA6;
+}
+
+.update form{
+   display: flex;
+   flex-direction: column;
+}
+
+.account-bg{
+    background-color: white;
+    padding: 10vh 0;
+}

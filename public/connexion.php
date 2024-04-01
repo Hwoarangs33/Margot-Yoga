@@ -11,7 +11,7 @@ $messageAdd = "";
 $lastNameFill = "";
 $firstNameFill = "";
 $emailFill = "";
-
+$phoneFill = "";
 
 
 if (isset($_POST['submit_add'])) {
@@ -89,6 +89,7 @@ if (isset($_POST['submit_login'])) {
                     $_SESSION['lastName'] = $user[0]['nom_user'];
                     $_SESSION['firstName'] = $user[0]['prenom_user'];
                     $_SESSION['email'] = $user[0]['mail_user'];
+                    $_SESSION['phone'] = $user[0]['tel_num'];
 
                     //Message de confirmation
                     $messageLog = "Bravo " . $_SESSION['firstName'] . " ! <br> Vous êtes bien connecté(e) !";
