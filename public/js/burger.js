@@ -16,7 +16,6 @@ document.querySelectorAll("#burger-menu .menu-item-has-children").forEach(item =
             item.closest("ul").classList.add("child-active");
         } else {
             item.classList.remove("item-active");
-            // Check if there are other active items within the same parent; if not, remove 'child-active'.
             const hasOtherActive = item.closest("ul").querySelector(".item-active");
             if (!hasOtherActive) {
                 item.closest("ul").classList.remove("child-active");
