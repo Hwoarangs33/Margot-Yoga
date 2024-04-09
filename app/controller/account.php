@@ -1,10 +1,33 @@
 <?php
 session_start();
 
+$style = '../../public/css/style.css';
+$cssreset = '../../public/css/cssreset.css';
+$header = '../../public/css/header.css';
+$footer = '../../public/css/footer.css';
+$button = '../../public/css/button.css';
+$burgercss = '../../public/css/burger.css';
+$modal = '../../public/css/modal.css';
+$connexion = '../../public/css/connexion.css';
+$account = '../../public/css/account.css';
 
-include '../app/utils/bdd.php';
-include '../app/utils/functions.php';
-include '../app/model/model_users.php';
+$scriptjs = '../../public/js/script.js';
+$burgerjs = '../../public/js/burger.js';
+$modaljs = '../../public/js/modal.js';
+
+$logoig = '../../public/images/instagram.png';
+$logofb = '../../public/images/logo-de-lapplication-facebook.png';
+$logouser =  '../../public/images/user.png';
+$logopanier =  '../../public/images/panier.png';
+$logophone = '../../public/images/telephone.png';
+$yellowarw = '../../public/images/flechejaune.png';
+$rectangle = '../../public/images/Rectangle2.png';
+$indexlink = '../../index.php';
+$logout = 'logout.php';
+
+include '../utils/bdd.php';
+include '../utils/functions.php';
+include '../model/model_users.php';
 
 
 $lastName = $_SESSION['lastName'];
@@ -57,7 +80,7 @@ if(isset($_POST['submit_add'])){
                         $_SESSION['email']=$email;
 
                         //ETAPE 9 : redirection vers le profil
-                        header('location:./account.php');
+                        header('location:account.php');
                         exit;
                     }
                 }
@@ -66,8 +89,8 @@ if(isset($_POST['submit_add'])){
         }
 }
 
-include '../app/view/header.php';
-include '../app/view/view_user.php';
-include '../app/view/view_create_user.php';
-include '../app/view/footer.php';
+include '../view/header.php';
+include '../view/view_user.php';
+include '../view/view_create_user.php';
+include '../view/footer.php';
 ?>

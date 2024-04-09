@@ -56,9 +56,9 @@ function displayDes(isActive) {
 function displayImg(isActive) {
     imgEvent.forEach((img) => {
         if (isActive) {
-            img.src = "../public/images/cimg1.jpeg";
+            img.src = "./public/images/cimg1.jpg";
         } else {
-            img.src = "../public/images/Article2.jpg";
+            img.src = "./public/images/Article2.jpg";
         }
     })
 }

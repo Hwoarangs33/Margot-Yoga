@@ -548,7 +548,7 @@ background: rgba(240, 195, 255, 0.3);
 
 .cards h4{
   font-size: 36px;
-  bottom: 65%;
+  bottom: 70%;
   color: #FFFBA6;
   -webkit-text-stroke: 1px #000000;
 }
@@ -588,6 +588,8 @@ position:relative;
     text-align: justify;
     width: 80%;
   }
+
+
 
   .cards{
     width: 80%;

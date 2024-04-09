@@ -8,7 +8,7 @@
     <div class="modal-text">
     <p>Bravo <?php echo $firstName ?> ! </p>
     <p>Vous avez bien été inscrit(e) !</p>
-    <a href="connexion.php"><button class="yellow">Se connecter</button></a>
+    <a href="./connexion.php"><button class="yellow">Se connecter</button></a>
     </div>
   </div>
 

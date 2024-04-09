@@ -36,16 +36,16 @@
 
   </div>
     <div class="logo" alt="LogoMargotYoga">
-      <img src="../public/images/Rectangle2.png" alt="" class="purple-bg-2">
+      <img src=<?php echo $rectangle ?> alt="" class="purple-bg-2">
       <h1>MARGOT YOGA</h1>
       </div>
   
     <section class="right-footer">
       <p class="num hide-mobile">06 73 70 17 39</p>
       <div class="icons d-flex">
-        <a href="https://facebook.com"><img class="" height="40" width="40" src="../public/images/logo-de-lapplication-facebook.png" /></a>
+        <a href="https://facebook.com"><img class="" height="40" width="40" src=<?php echo $logofb ?> /></a>
 
-        <a href="https://instagram.com"><img class="" height="40" width="40" src="../public/images/instagram.png" /></a>
+        <a href="https://instagram.com"><img class="" height="40" width="40" src=<?php echo $logoig ?> /></a>
       </div>
     </section>
   </footer>

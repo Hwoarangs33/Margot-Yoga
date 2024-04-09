@@ -8,18 +8,18 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../public/css/style.css" />
-  <link rel="stylesheet" href="../public/css/cssreset.css" />
-  <link rel="stylesheet" href="../public/css/header.css" />
-  <link rel="stylesheet" href="../public/css/footer.css" />
-  <link rel="stylesheet" href="../public/css/button.css" />
-  <link rel="stylesheet" href="../public/css/burger.css" />
-  <link rel="stylesheet" href="../public/css/modal.css" />
-  <link rel="stylesheet" href="../public/css/connexion.css" />
-  <link rel="stylesheet" href="../public/css/account.css" />
-  <script defer src="../public/js/script.js"></script>
-  <script defer src="../public/js/burger.js"></script>
-  <script defer src="../public/js/modal.js"></script>
+  <link rel="stylesheet" href=<?php echo $style ?> />
+  <link rel="stylesheet" href=<?php echo $cssreset ?> />
+  <link rel="stylesheet" href=<?php echo $header ?> />
+  <link rel="stylesheet" href=<?php echo $footer ?> />
+  <link rel="stylesheet" href=<?php echo $button ?> />
+  <link rel="stylesheet" href=<?php echo $burgercss ?>/>
+  <link rel="stylesheet" href=<?php echo $modal ?> />
+  <link rel="stylesheet" href=<?php echo $connexion ?> />
+  <link rel="stylesheet" href=<?php echo $account ?> />
+  <script defer src=<?php echo $scriptjs?>> </script>
+  <script defer src=<?php echo $burgerjs?>></script>
+  <script defer src=<?php echo $modaljs?>></script>
   <title>Margot Yoga</title>
 </head>
 
@@ -27,12 +27,12 @@
   <!-- LE HEADER -->
   <header>
 <a class="contact" href="/contact.php">
-  <img src="../public/images/telephone.png" alt="" width="40" height="40" class="">
+  <img src=<?php echo $logophone ?> alt="" width="40" height="40" class="">
 </a>
 
     <!-- 1  -->
     <div class="logo" alt="LogoMargotYoga">
-      <a href="index.php"><img src="../public/images/Rectangle2.png" alt="" class="purple-bg-2">
+      <a href=<?php echo $indexlink ?>><img src=<?php echo $rectangle ?> alt="" class="purple-bg-2">
       <h1>MARGOT YOGA</h1></a>
     </div>
     <!-- 2 -->
@@ -58,21 +58,21 @@
     <!-- 3 -->
     <?php if(isset($_SESSION['firstName'])){?>
       <div class="account-wrapper hide-mobile">
-    <a href="account.php"><img alt="LogoUser" height="45" width="45" class="icons hide-mobile" src="../public/images/user.png" /></a>
-    <a href="account.php"><img alt="LogoUser" height="45" width="45" class="icons hide-mobile" src="../public/images/panier.png" /></a>
-   <a href="logout.php" class="hide-mobile"><button class="purple">Se déconnecter</button></a> 
+    <a href="./app/controller/account.php"><img alt="LogoUser" height="45" width="45" class="icons hide-mobile" src=<?php echo $logouser ?> /></a>
+    <a href="./app/controller/account.php"><img alt="LogoUser" height="45" width="45" class="icons hide-mobile" src=<?php echo $logopanier ?> /></a>
+   <a href=<?php echo $logout ?> class="hide-mobile"><button class="purple">Se déconnecter</button></a> 
     </div>
     <?php }else{?>
-   <a href="connexion.php" class="hide-mobile"><button class="purple">Connexion</button></a> 
+   <a href="./app/controller/connexion.php" class="hide-mobile"><button class="purple">Connexion</button></a> 
     
 
     <!-- 4 -->
     
     <div class="links hide-mobile">
-      <a href="https://www.instagram.com/margot_bruno"><img alt="LogoInstagram" height="50" width="50" class="icons" src="../public/images/instagram.png" /></a>
-      <a href="https://www.facebook.com/profile.php?id=100087822937879"><img alt="LogoFacebook" height="50" width="50" class="icons" src="../public/images/logo-de-lapplication-facebook.png" /></a>
+      <a href="https://www.instagram.com/margot_bruno"><img alt="LogoInstagram" height="50" width="50" class="icons" src=<?php echo $logoig ?> /></a>
+      <a href="https://www.facebook.com/profile.php?id=100087822937879"><img alt="LogoFacebook" height="50" width="50" class="icons" src=<?php echo $logofb ?> /></a>
         <!-- Image en absolu vers le lien FB -->
-  <img alt="ClickMeFb" height="200" width="200" src="../public/images/flechejaune.png" />
+  <img alt="ClickMeFb" height="200" width="200" src=<?php echo $yellowarw ?> />
  
   <?php }?>
 
